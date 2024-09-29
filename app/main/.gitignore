@@ -1,0 +1,43 @@
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Entorno virtual
+venv/
+env/
+ENV/
+.venv/
+
+# Dependencias
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Archivos de configuración de IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos temporales
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Archivos de configuración de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Archivos de bases de datos
+*.sqlite3
+
+# Archivos de configuración de Pytest
+.cache/
+pytest_cache/
