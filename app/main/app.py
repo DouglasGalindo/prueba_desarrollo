@@ -41,7 +41,7 @@ class Empleado(db.Model):
     nombre_cargo = db.Column(db.String(50), nullable=False)
     fecha_contratacion = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
-# Modelo de empleado
+# Modelo de Departamentos
 class Departamentos(db.Model):
     __tablename__ = 'departamentos'  # Asegúrate de que esta tabla exista en tu base de datos
     id_departamento = db.Column(db.Integer, primary_key=True)
@@ -125,7 +125,7 @@ class EmpleadoResource(Resource):
 @api.route('/api/departamentos')
 class DepartamentosList(Resource):
     def get(self):
-        """Listar empleados"""
+        """Listar departamentos"""
         departamentos = Departamentos.query.all()
         return [{'id_departamento': dep.id_departamento, 'nombre': dep.departamento} for dep in departamentos], 200
 
